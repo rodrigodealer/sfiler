@@ -20,5 +20,4 @@ class PingControllerTest extends FeatureTest {
         andExpect = Status.Ok)
     }
   }
-
 }
