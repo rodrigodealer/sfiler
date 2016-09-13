@@ -7,10 +7,7 @@ import com.twitter.inject.server.FeatureTest
 
 class PingControllerTest extends FeatureTest {
 
-
-  val myApp = new Main()
-
-  override val server = new EmbeddedHttpServer(myApp)
+  override val server = new EmbeddedHttpServer(new Main)
 
   "MyTest" should  {
 

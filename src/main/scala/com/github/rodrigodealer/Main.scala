@@ -6,11 +6,9 @@ import com.twitter.finatra.http.HttpServer
 import com.twitter.finatra.http.filters.{CommonFilters, TraceIdMDCFilter, LoggingMDCFilter}
 import com.twitter.finatra.http.routing.HttpRouter
 
-object Finatra extends Main()
+object Finatra extends Main
 
-class Main() extends HttpServer {
-
-
+class Main extends HttpServer {
 
   override def defaultFinatraHttpPort = ":8080"
 

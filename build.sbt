@@ -8,7 +8,7 @@ lazy val versions = new {
   val finatra = "2.4.0"
   val guice = "4.1"
   val mockito = "1.10.19"
-  val scalatest = "3.0.0"
+  val scalatest = "2.2.6"
 }
 
 resolvers ++= Seq(
@@ -23,7 +23,6 @@ libraryDependencies ++= Seq(
   "com.twitter" %% "finagle-redis" % "6.33.0",
   "org.slf4j" % "slf4j-simple" % "1.7.21",
   "com.github.Shinsuke-Abe" %% "dropbox4s" % "0.2.0",
-
   "com.twitter" %% "finatra-http" % versions.finatra % "test",
   "com.twitter" %% "inject-server" % versions.finatra % "test",
   "com.twitter" %% "inject-app" % versions.finatra % "test",
